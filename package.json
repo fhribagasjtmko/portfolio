@@ -1,0 +1,25 @@
+{
+  "name": "space-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://fhribagasjtmko.github.io/portfolio",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "framer-motion": "^10.12.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2",
+    "react-spinners": "^0.13.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "gh-pages": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}

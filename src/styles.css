@@ -1,0 +1,39 @@
+:root{
+  --bg:#02040b;
+  --panel: rgba(255,255,255,0.03);
+  --accent:#06b6d4;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:var(--bg);color:#e6eef8;overflow-x:hidden}
+.space-canvas{position:fixed;left:0;top:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.app-root{min-height:100vh;display:flex;flex-direction:column;position:relative;z-index:2}
+.main-area{flex:1;display:flex;align-items:center;justify-content:center;padding:30px}
+.topnav{background:transparent;border-bottom:1px solid rgba(255,255,255,0.03)}
+.navbar-brand{font-weight:700;color:#cfeefe}
+.nav-link{color:rgba(255,255,255,0.7)!important}
+.home-card{max-width:940px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:28px;border-radius:12px;backdrop-filter:blur(6px)}
+.btn-glow{box-shadow:0 6px 20px rgba(6,182,212,0.08);border-radius:12px;padding:12px 22px}
+.panel{border-radius:12px}
+.info-grid{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.info-item{flex:1;min-width:140px;background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;text-align:center}
+.cert-card{max-width:900px;margin:0 auto;background:linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+.cert-img{max-height:640px;object-fit:contain;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+
+/* splash */
+.full-splash{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#020617,#04102a);z-index:9999}
+.splash-anim .rocket-large{font-size:72px;animation:pop 1s ease-in-out infinite alternate}
+@keyframes pop{from{transform:translateY(0) rotate(-8deg)} to{transform:translateY(-12px) rotate(8deg)}}
+
+/* small rocket floating top-right */
+.rocket{position:fixed;right:20px;top:80px;font-size:28px;z-index:3;opacity:0.9;pointer-events:none;transform:translateZ(0)}
+
+/* loading */
+.loading-wrap{display:flex;align-items:center;justify-content:center;height:60vh;z-index:3}
+
+/* responsive */
+@media (max-width:768px){
+  .home-card{padding:20px}
+  .navbar-brand{font-size:16px}
+  .rocket{top:70px;right:12px;font-size:22px}
+  .main-area{padding:20px}
+}
