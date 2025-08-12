@@ -15,7 +15,7 @@ function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.45 }}
       >
-        <h1 className="display-5 mb-3">Welcome to My Space Portfolio</h1>
+        <h1 className="display-5 mb-3">Welcome to My Portfolio</h1>
         <p className="lead mb-4">Cybersecurity student • Frontend hobbyist</p>
         <div className="d-flex justify-content-center gap-3 flex-wrap">
           <Link to="/dashboard" className="btn btn-lg btn-primary btn-glow">Dashboard</Link>
@@ -76,6 +76,28 @@ function Certificate() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           />
+          <div className="card cert-card p-3 bg-dark shadow-lg">
+          <motion.img
+            src={`${import.meta.env.BASE_URL}certificate1.jpg`}
+            alt="Certificate"
+            className="img-fluid rounded cert-img"
+            style={{ maxWidth: "100%", height: "auto" }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          />
+            <div className="card cert-card p-3 bg-dark shadow-lg">
+          <motion.img
+            src={`${import.meta.env.BASE_URL}certificate2.jpg`}
+            alt="Certificate"
+            className="img-fluid rounded cert-img"
+            style={{ maxWidth: "100%", height: "auto" }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          />
+        </div>
+        </div>
         </div>
       </motion.div>
     </Layout>
@@ -93,8 +115,8 @@ function Contact() {
         transition={{ duration: 0.35 }}
       >
         <h2>Contact Me</h2>
-        <p>Email: fahri@example.com</p>
-        <p>Instagram: @fhribagasjtmko</p>
+        <p>Email: missing@gmail.com</p>
+        <p>Instagram: @missing</p>
       </motion.div>
     </Layout>
   )
@@ -104,7 +126,7 @@ function TopNav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark topnav">
       <div className="container">
-        <Link className="navbar-brand" to="/">space-portfolio</Link>
+        <Link className="navbar-brand" to="/">portfolio</Link>
         <button
           className="navbar-toggler"
           type="button"
